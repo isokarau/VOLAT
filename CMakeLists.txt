@@ -31,14 +31,20 @@ set(MAP
         modules/map/Hex.h
         )
 
+set(TANK
+        modules/tank/Tank.cpp
+        modules/tank/Tank.h
+        )
+
 
 add_executable(
         WGForgeProject
         main.cpp
 
         # Add all modules here
-         ${CLIENT}
-         ${CORE}
-         ${STRATEGY}
-         ${MAP}
+        ${CLIENT}
+        ${CORE}
+        ${STRATEGY}
+        ${MAP}
+        ${TANK}
 )
